@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    float: left;
+    position: relative;
+    font-size: 40px;
+    top: -20px;
+    left: 100px;
+    letter-spacing: 10px;
+}
+
+.header h1 {
+    
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.nav-links {
+    float: right;
+    position: relative;
+    right: 100px;
+    word-spacing: 40px;
+    top: 85px;
+    font-size: 25px;
+    cursor:default;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    transition: 0.2s;
+    color: aqua;
+    font-style: italic;
+    font-weight: 600;
+}
+
