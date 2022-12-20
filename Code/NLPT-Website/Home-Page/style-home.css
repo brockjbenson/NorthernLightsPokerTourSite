@@ -1,8 +1,35 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Blinker', sans-serif;
 }
+
+body {
+	background-image: linear-gradient(140deg, rgb(0,0,0),rgb(25, 100, 106),rgb(0, 207, 82),rgb(0, 198, 144),rgb(0, 255, 251),rgb(3, 46, 62),rgb(0,0,0));
+    backdrop-filter: brightness(30%);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 30%;
+    }
+    25% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+    70% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 30%;
+	}
+}
+
 nav h1 {
     color: white;
     font-size: 100px;
@@ -10,13 +37,13 @@ nav h1 {
     cursor: text;
 }
 
+
+
 .bg-img {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../images-unv/bg-img.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(20px);
 }
 
 nav {
@@ -39,9 +66,6 @@ nav img {
 .nav-links {
     display: flex;
     text-align: right;
-    background-color: rgba(25, 25, 25, 0.95);
-    border: 2px solid aqua;
-    border-radius: 10px;
     cursor: default;
 }
 
@@ -56,7 +80,7 @@ nav img {
     text-decoration: none;
     color:rgb(231, 231, 231);
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .nav-links ul li a::after {
@@ -82,8 +106,6 @@ nav img {
     left: 50%;
     transform: translate(-50%, -30%);
     text-align: center;
-    background-color: rgba(25, 25, 25, 0.95);
-    border: 3px solid aqua;
     margin: 0;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -109,19 +131,9 @@ nav img {
     top: 50px;
     width: 270px;
     height: 70px;
-    background-color: rgba(0, 255, 255, 0.3);
-    border: 2px solid aqua;
-    border-radius: 10px;
-    font-weight: 600;
-
+    background: transparent;
 }
 
-.text-box a button:hover {
-    cursor: pointer;
-    scale: 110%;
-    transition: 0.3s;
-    color: white;
-    background-color: rgba(0, 255, 255, 0.6);
 
-}
+
 
