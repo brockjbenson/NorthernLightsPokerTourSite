@@ -1,35 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Blinker', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-
-body {
-	background-image: linear-gradient(140deg, rgb(0,0,0),rgb(25, 100, 106),rgb(0, 207, 82),rgb(0, 198, 144),rgb(0, 255, 251),rgb(3, 46, 62),rgb(0,0,0));
-    backdrop-filter: brightness(30%);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 30%;
-    }
-    25% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-    70% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 30%;
-	}
-}
-
 nav h1 {
     color: white;
     font-size: 70px;
@@ -38,13 +11,13 @@ nav h1 {
     padding: 0
 }
 
-
-
 .bg-img {
     min-height: 100vh;
     width: 100%;
+    background-image: url("../images-unv/bg-img.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    backdrop-filter: blur(20px);
 }
 
 nav {
@@ -68,6 +41,9 @@ nav img {
 .nav-links {
     display: flex;
     text-align: right;
+    background-color: rgba(25, 25, 25, 0.95);
+    border: 2px solid aqua;
+    border-radius: 10px;
     cursor: default;
 }
 
@@ -82,7 +58,7 @@ nav img {
     text-decoration: none;
     color:rgb(231, 231, 231);
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .nav-links ul li a::after {
@@ -108,6 +84,8 @@ nav img {
     left: 50%;
     transform: translate(-50%, -30%);
     text-align: center;
+    background-color: rgba(25, 25, 25, 0.95);
+    border: 3px solid aqua;
     margin: 0;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -126,48 +104,25 @@ nav img {
     font-weight: 600;
 }
 
-.text-box button {
-    border: 0;
-    color: rgb(0, 255, 217);
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 10px auto;
-    padding: 15px 30px;
-    display: inline-block;
-    border: 2px solid #00ff7b;   
+.text-box a button {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 50px;
+    width: 270px;
+    height: 70px;
+    background-color: rgba(0, 255, 255, 0.3);
+    border: 2px solid aqua;
+    border-radius: 10px;
+    font-weight: 600;
+
 }
 
-.text-box button:hover,
-.text-box button:focus{
-    color: rgb(255, 255, 255);
-    border-top-color: rgb(0, 255, 115);
-    border-right-color: rgb(0, 255, 115);
-    border-bottom-color: rgb(0, 255, 247);
-    border-left-color: rgb(0, 255, 247);
-}
-.text-box button:hover,
-.text-box button:focus{
-    transition: color 0.5s linear, 
-      border-top-color 0.10s linear 0.20s, 
-      border-right-color 0.20s linear 0.30s, 
-      border-bottom-color 0.30s linear 0.40s, 
-      border-left-color 0.40s linear 0.50s;
-}
-.text-box button:hover,
-.text-box button:focus{
-    transition: color 0.5s linear, 
-      border-bottom-color 0.10s linear 0.20s, 
-      border-left-color 0.20s linear 0.30s, 
-      border-top-color 0.30s linear 0.40s, 
-      border-right-color 0.40s linear 0.50s;
-}
-.text-box button:hover,
-.text-box button:focus{
-    transition: color 0.5s linear, 
-      border-left-color 0.3s linear 0.30s, 
-      border-right-color 0.4s linear 0.30s, 
-      border-bottom-color 0.5s linear 0.50s, 
-      border-top-color 0.5s linear 0.50s;
-      scale: 110%;
+.text-box a button:hover {
+    cursor: pointer;
+    scale: 110%;
+    transition: 0.3s;
+    color: white;
+    background-color: rgba(0, 255, 255, 0.6);
+
 }
