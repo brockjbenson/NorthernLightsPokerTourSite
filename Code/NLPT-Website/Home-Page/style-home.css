@@ -1,55 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Blinker", sans-serif;
-  }
   
   body {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images-home/home-bg-img.jpg);
     background-size: cover;
+    margin: 0;
+    padding: 0;
   }
+
   
-  nav h1 {
-    color: white;
-    font-size: 60px;
-    font-weight: 700;
-    cursor: text;
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    font-style: italic;
-  }
-  
-  nav {
+  .nav-bar {
     display: flex;
     flex-direction: row;
-    padding: 2% 6%;
     justify-content: space-between;
-    align-items: center;
-    cursor: default;
   }
-  
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nlpt {
+  color: white;
+  font-size: 80px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+
+
+  .nav-links ul li a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+
   .nav-links {
     display: flex;
     text-align: right;
     cursor: default;
     position: absolute;
-    right: 350px;
+    right: 400px;
     top: 60px;
   }
+  
+
   
   .nav-links ul li {
     list-style: none;
     display: inline-block;
     position: relative;
     padding-left: 50px;
-  }
-  
-  .nav-links ul li a {
-    text-decoration: none;
-    color: rgb(231, 231, 231);
-    font-size: 15px;
-    font-weight: 400;
+    
   }
   
   .nav-links ul li a::after {
@@ -69,7 +73,7 @@
 
 .nav-btns {
     position: absolute;
-    right: 60px;
+    right: 130px;
     top: 45px;
   }
 
@@ -77,7 +81,19 @@
     font-size: 15px;
   }
 
+  .material-symbols-outlined {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 55px;
+    scale: 1.7;
+  }
 
+  .material-symbols-outlined:hover {
+    cursor: pointer;
+    color: aqua;
+    transition: 0.5s;
+  }
 
   #log-in {
     background-color: transparent;
@@ -88,12 +104,28 @@
     font-weight: 600;
   }
 
+  #log-in::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 3px;
+    background: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+  }
+
+  #log-in:hover::after {
+    width: 40%;
+  }
+
+
 
 
   #register {
     background-color: aqua;
     color: black;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px solid aqua;
     width: 125px;
     height: 40px;
@@ -107,21 +139,25 @@
     cursor: pointer;
   }
 
+  #register:hover {
+    background-color: transparent;
+  }
+
 
   #blur-main-text {
-    backdrop-filter: blur(10px);
-    width: 620px;
-    height: 400px;
-    padding: 20px;
-    background-color: rgba(151, 151, 151, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    width: 800px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.1);
     position: absolute;
     left: 120px;
-    top: 160px;
+    top: 200px;
   }
   
   .main-block {
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 150px;
     display: flex;
     flex-direction: column;
@@ -132,15 +168,16 @@
   #main-txt {
     font-size: 80px;
     font-weight: 800;
-    line-height: 7rem;
+    line-height: 6rem;
     color: white;
   }
+
   
   #second-txt {
     position: relative;
-    top: 20px;
-    font-size: 20px;
-    font-weight: 400;
+    top: 10px;
+    font-size: 25px;
+    font-weight: 300;
     color: white;
   }
   
@@ -148,9 +185,9 @@
     font-size: 20px;
     color: black;
     position: relative;
-    border-radius: 50px;
+    border-radius: 10px;
     font-weight: 600;
-    top: 50px;
+    top: 30px;
     width: 270px;
     height: 70px;
     background: aqua;
@@ -165,4 +202,6 @@
     border: 2px solid aqua;
     color: aqua;
   }
+
+  
   

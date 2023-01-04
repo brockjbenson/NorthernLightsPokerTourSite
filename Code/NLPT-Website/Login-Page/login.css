@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Blinker", sans-serif;
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Home-Page/images-home/home-bg-img.jpg);
+    background-size: cover;
+  }
+  
+  .header h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    cursor: text;
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    font-style: italic;
+  }
+
+  .header h1:hover {
+    cursor: pointer;
+  }
+
+  #box {
+    backdrop-filter: blur(12px);
+    width: 800px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 0;
+  }
+
+  .main-block h3 {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 175px;
+    right: 140px;
+    font-weight: 700;
+  }
+
+
+  .login-forms input {
+    height: auto;
+    width: 600px;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 80px;
+    border: 2px solid white;
+    padding: 20px;
+    color: white;
+    vertical-align: middle;
+    user-select: none;
+  }
+
+  .login-forms input::after {
+    border: 2px solid aqua;
+  }
+
+  .login-forms ::-webkit-input-placeholder {
+    /*color: white;
+    position: relative;
+    top: 8px; */
+  }
+  
+  #username {
+    position: absolute;
+    right: 80px;
+    top: 300px;
+  }
+
+  .login-forms input:hover {
+    border: 2px solid aqua;
+    transition: 0.5s;
+  }
+
+
+  #password {
+    position: absolute;
+    right: 80px;
+    top: 400px;
+  }
+  
+  .login-forms button {
+    font-size: 30px;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    background: aqua;
+    border: none;
+    letter-spacing: 3px;
+  }
+
+  .login-forms button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: aqua;
+  }
+
+
+  #or {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    right: 400px;
+    top: ;
+  }
+
+  #sign-in {
+    position: absolute;
+    right: 300px;
+    top: 540px;
+  }
+  
