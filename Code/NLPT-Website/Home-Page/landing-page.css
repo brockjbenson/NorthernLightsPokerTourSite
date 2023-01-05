@@ -1,0 +1,125 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Custom Properties ---- */
+
+:root {
+    --clr-primary-1: #00c690;
+    --clr-primary-2: #19646a;
+    --clr-dark: #1c1c1c;
+    --clr-light: #e6e6e6;
+
+    --fs-sm: 1.75rem;
+    --fs-md: 2.25rem;
+    --fs-lg: 3.5rem;
+
+    --pd-sm-0: 0.5rem;
+    --pad-sm-1: 0.75;
+    --pad-sm-2: 1rem;
+}
+
+
+/* ---- Main Styles ---- */
+
+
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.container-header h1 {
+    font-size: var(--fs-lg);
+}
+
+
+.primary-nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    padding-top: var(--pad-sm-2);
+    border: 1px solid black;
+}
+
+.primary-nav ul li  {
+    list-style: none;
+}
+
+.primary-nav ul li a {
+    text-decoration: none;
+    font-size: var(--fs-md);
+    color: var(--clr-primary-2);
+}
+
+
+
+
+
